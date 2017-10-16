@@ -1,0 +1,137 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Banana's Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <table width = "100%" height = "100%" >
+      <tr width:100px;>
+        <td class = 'Home' width = "2.5%">Home</td>
+        <td class = 'About_me' width = "19%" onclick = "toAbout()">
+          <div>
+            <img src="https://lh3.googleusercontent.com/eH4KwUpND-yLJlx1t19GRCLehL4BZCLIfiUSNAAtqDT5fgq0qzT2kpkAqSJghhTiVhuhBkCW_2F2b10=w1919-h918" />
+            <p class = 'home_title' display="none">About me</p>
+          </div>
+        </td>
+        <td class = 'Major' width = "19%">
+          <div>
+            <img src="https://lh6.googleusercontent.com/0vABZzVI3wZPapRzIp_3o41IlXs0dktbRVGBW36wnaMFFKG9xKDDXtiGbjW_Agx9EQmrtwlcHonYypk=w1919-h918" />
+            <p class = 'home_title' display="none">Major</p>
+          </div>
+        </td>
+        <td class = 'Interest' width = "19%">
+          <div>
+            <img src="https://lh3.googleusercontent.com/oEScQ8LYz9XJbQSD0puyu-7wYIZKqCxqtgdgtydXAnayrQ52VvncmXMOIP4iJmoOeA0Uv396ru9Hjb8=w1919-h918" />
+            <p class = 'home_title' display="none">Interest</p>
+          </div>
+        </td>
+        <td class = 'Activity' width = "19%">
+          <div>
+            <img src="https://lh3.googleusercontent.com/MXAwnrlvG_mIJ1n7P3MMV1blZF-0V5xXVMYWmDQosEKHPaDFSNeLrkLMDeNcU1Sku_HEjEeFwrxRtR0=w1919-h918" />
+            <p class = 'home_title' display="none">Activity</p>
+          </div>
+        </td>
+        <td class = 'Contact' width = "19%">
+          <div>
+            <img src="https://lh4.googleusercontent.com/7VYI6tkwP3mincmc8BIFecrzhdBb2EpQZVgH4AywW7T0Q8K7JkVS9SNHLXOnh02hGZhKSQpmXDAJu9U=w1919-h918" />
+            <p class = 'home_title' display="none">Contact</p>
+          </div>
+        </td>
+        <td class= 'Blank' width = "2.5%"></td>
+      </tr>
+    </table>
+    <script type = "text/javascript" src = "index.js"></script>
+  </body>
+
+  <style>
+
+    tr{
+      /*background-image: url('https://lh3.googleusercontent.com/WJImCDa3BBLRLEL_IR1ceAEQSATNXqkQq9ihmbx5H6AJuBU0O_yADYPV0z0tBeDsIiIpA6iduo4SR8g=w958-h893');
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position: 60%;*/
+    }
+
+    td.Home{
+      font-size: 3px;
+      text-align:center;
+      border-right-width: thin;
+      border-right-style: solid;
+      border-right-color: black;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+    }
+
+    td.About_me{
+      text-align:center;
+      background-image: url('https://lh3.googleusercontent.com/eH4KwUpND-yLJlx1t19GRCLehL4BZCLIfiUSNAAtqDT5fgq0qzT2kpkAqSJghhTiVhuhBkCW_2F2b10=w1919-h918');
+      background-repeat:no-repeat;
+      background-size: 100%;
+      background-position: -370px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+      vertical-align : middle;
+    }
+    td.Major{
+      text-align:center;
+      background-image: url('https://lh6.googleusercontent.com/0vABZzVI3wZPapRzIp_3o41IlXs0dktbRVGBW36wnaMFFKG9xKDDXtiGbjW_Agx9EQmrtwlcHonYypk=w1919-h918');
+      background-repeat:no-repeat;
+      background-size: contain;
+      background-position: -370px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+    }
+    td.Interest{
+      text-align:center;
+      background-image: url('https://lh3.googleusercontent.com/oEScQ8LYz9XJbQSD0puyu-7wYIZKqCxqtgdgtydXAnayrQ52VvncmXMOIP4iJmoOeA0Uv396ru9Hjb8=w1919-h918');
+      background-repeat:no-repeat;
+      background-size: contain;
+      background-position: -370px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+    }
+    td.Activity{
+      text-align:center;
+      background-image: url('https://lh3.googleusercontent.com/MXAwnrlvG_mIJ1n7P3MMV1blZF-0V5xXVMYWmDQosEKHPaDFSNeLrkLMDeNcU1Sku_HEjEeFwrxRtR0=w1919-h918');
+      background-repeat:no-repeat;
+      background-size: contain;
+      background-position: -370px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+    }
+    td.Contact{
+      text-align:center;
+      background-image: url('https://lh4.googleusercontent.com/7VYI6tkwP3mincmc8BIFecrzhdBb2EpQZVgH4AywW7T0Q8K7JkVS9SNHLXOnh02hGZhKSQpmXDAJu9U=w1919-h918');
+      background-repeat:no-repeat;
+      background-size: contain;
+      background-position: -370px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: rgba(180,180,180,0.5);
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      position: relative;
+      opacity: 0;
+      top: 200px;
+    }
+    p {
+      opacity: 0;
+      position: relative;
+      top: -110px;
+    }
+  </style>
+
+</html>
