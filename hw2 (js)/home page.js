@@ -29,7 +29,7 @@ function nextPage(website){
     setTimeout(function(){
       switch (website) {
         case 1:
-          location.href = "https://bananachen.github.io/Web-design/banana.html";
+          location.href = "https://bananachen.github.io/Web-design//hw1%20-%20my%20profile%20(html%20css)/banana.html";
           break;
         case 2:
           location.href = "http://www.csie.ncku.edu.tw/ncku_csie/images/ncku/photo/student.png";
