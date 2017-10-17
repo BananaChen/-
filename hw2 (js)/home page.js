@@ -3,8 +3,8 @@ $(document).ready(function(){
   $('td').animate({'background-position': '0px'}, 1400);
   $('td').animate({'background-position': '370px'}, 1400);
   setTimeout(function(){
-    $('p').animate({'opacity': '1'}, 'slow');
-  }, 2100);
+    $('p').animate({'opacity': '1'}, 1750);
+  }, 2300);
   setTimeout(function(){
     $("td").hover(
       function(){
@@ -16,7 +16,7 @@ $(document).ready(function(){
     )
     //$('td').css('background-position', '-370px');
     loaded = 1;
-  }, 2500);
+  }, 3300);
 })
 
 function nextPage(website){
