@@ -1,5 +1,5 @@
 <?php
-$fn = $_GET["fname"];
-$fn = $_GET["lname"];
+$fn = $_POST["fname"];
+$ln = $_POST["lname"];
 echo "<h1>Hello, {$fn} {$ln}</h1>";
 ?>
