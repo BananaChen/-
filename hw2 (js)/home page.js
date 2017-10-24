@@ -1,11 +1,16 @@
-var loaded = 0;
+var loaded = 0, animateee = 1;
 $(document).ready(function(){
   $('td').animate({'background-position': '0px'}, 1400);
-  $('td').animate({'background-position': '370px'}, 1400);
-  setTimeout(function(){
+  $('td').animate({'background-position': '370px'}, 1400, function(){
+      $('p').animate({'opacity': '1'}, 1750, function(){
+        loaded = 1;
+        animateee = 0;
+      });
+    });
+  /*setTimeout(function(){
     $('p').animate({'opacity': '1'}, 1750);
-  }, 2300);
-  setTimeout(function(){
+  }, 2300);*/
+  /*setTimeout(function(){
     $("td").hover(
       function(){
           $(this).find('img').animate({'opacity': '1'}, 400)//ask why find img
@@ -16,11 +21,14 @@ $(document).ready(function(){
     )
     //$('td').css('background-position', '-370px');
     loaded = 1;
-  }, 3300);
+    animateee = 0;
+  }, 3300);*/
+  flying();
 })
 
 function nextPage(website){
   if(loaded == 1){
+    animateee = 1;
     $('td').css('background-position', '-370px');
     $('td div img').css('opacity' , '0');
     $('p.home_title').css('opacity' , '0');
@@ -47,4 +55,16 @@ function nextPage(website){
       }
     }, 2200);
   }
+}
+
+function flying(){
+  $("td").hover(
+      function(){
+        if(animateee == 0) $(this).find('img').animate({'opacity': '1'}, 400)//ask why find img
+      },
+      function() {
+        if(animateee == 0) $(this).find('img').animate({'opacity': '0'}, 400)
+      }
+
+  )
 }
