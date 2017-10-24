@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  setInterval(function(){
+  /*setInterval(function(){
     $.ajax({
       method: "POST",
       url: "do.php"
@@ -19,6 +19,18 @@ $(document).ready(function(){
       $("#content").html(data);
       $('input').val("");
     })
+  }*/
+
+  $('button[type=submit]').click(function(){
+    event.preventDefault();
+    $.ajax({
+      method: "POST",
+      url: "t.php"
+      data: {id: $('input[name = id]').val()},
+      success: function(data){
+        $("#content").text(data);
+      }
+    });
   }
 
 /*      data:{

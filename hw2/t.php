@@ -1,5 +1,5 @@
 <?php
-$fn = $_POST["fname"];
-$ln = $_POST["lname"];
-echo "<h1>Hello, {$fn} {$ln}</h1>";
+$n = $_POST["id"];
+//$ln = $_POST["lname"];
+echo "<h1>Hello, {$n}</h1>";
 ?>
