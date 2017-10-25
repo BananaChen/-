@@ -10,16 +10,16 @@ else{
 }
 
 switch ($blood_type) {
-  case 'A':
+  case 'A'|| 'a':
     echo "conservative, reponsible";
     break;
-  case 'B':
+  case 'B' || 'b':
     echo "passionate, confident";
     break;
-  case 'O':
+  case 'O' || 'o':
     echo "ambitious, sociable";
     break;
-  case 'AB':
+  case 'AB' || 'ab':
     echo "organized, rational";
     break;
   default:
