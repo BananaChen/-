@@ -43,8 +43,9 @@ function nextPage(website){
           location.href = "http://www.csie.ncku.edu.tw/ncku_csie/images/ncku/photo/student.png";
           break;
         case 3:
-        location.href = "https://bananachen.github.io/Web-design/hw2/Ajax.html";
-            break;
+        //location.href = "https://bananachen.github.io/Web-design/hw2/Ajax.html";
+          location.href = "http://luffy.ee.ncku.edu.tw/~BananaFish/Ajax.html"
+        break;
         case 4:
           location.href = "https://www.facebook.com/csieweek/";
             break;

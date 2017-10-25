@@ -23,7 +23,7 @@ switch ($blood_type) {
     echo "organized, rational";
     break;
   default:
-    echo "please type in correct blood type!";
+    echo " Idiot!!! cause there is no blood type {$blood_type}! please type in correct blood type!";
     break;
     }
 ?>
