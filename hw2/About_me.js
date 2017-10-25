@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  /*setInterval(function(){
+/*  setInterval(function(){
     $.ajax({
       method: "POST",
       url: "do.php"
@@ -21,17 +21,17 @@ $(document).ready(function(){
     })
   }*/
 
-  $('button[type=submit]').click(function(){
+  $("button").click(function(){
     event.preventDefault();
     $.ajax({
       method: "POST",
-      url: "t.php"
+      url: "t.php",
       data: {id: $('input[name = id]').val()},
       success: function(data){
         $("#content").text(data);
       }
     });
-  }
+  })
 
 /*      data:{
         id:$('input[name=id]').val()
@@ -43,4 +43,4 @@ $(document).ready(function(){
     });
     $('#content').html('loading...');
   )}*/
-}
+})
