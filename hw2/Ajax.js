@@ -26,7 +26,7 @@ $(document).ready(function(){
     $.ajax({
       method: "POST",
       url: "t.php",
-      data: {id: $('input[name = id]').val()},
+      data: {id: $('input').val()},
       success: function(data){
         $("#content").text(data);
       }
