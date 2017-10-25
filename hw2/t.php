@@ -1,15 +1,15 @@
 <?php
 $id = $_POST["id"];
-$blood = $_POST["blood_type"];
-if($blood){
-  echo "Hello, {$id}, your blood type is {$blood}.<br>";
-  echo "The personality of blood type {$blood}is <br>";
+$blood_type = $_POST["blood_type"];
+if($blood_type){
+  echo "Hello,{$id}, your blood type is {$blood_type}.";
+  echo "The personality of blood type {$blood_type} is ";
 }
 else{
-  echo "please type your data<br>";
+  echo "please type your data\<br>";
 }
 
-switch ($blood) {
+switch ($blood_type) {
   case 'A':
     echo "conservative, reponsible";
     break;
@@ -17,14 +17,13 @@ switch ($blood) {
     echo "passionate, confident";
     break;
   case 'O':
-    echo "smbitious, sociable";
+    echo "ambitious, sociable";
     break;
   case 'AB':
     echo "organized, rational";
     break;
   default:
-    echo "please type in correct blood type!"
+    echo "please type in correct blood type!";
     break;
-}
-
+    }
 ?>

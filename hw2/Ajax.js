@@ -22,11 +22,11 @@ $(document).ready(function(){
   }*/
 
   $("button").click(function(){
-    event.preventDefault();
+   event.preventDefault();
     $.ajax({
       method: "POST",
       url: "t.php",
-      data: {id: $('input').val()},
+      data: {id: $("input[name=id]").val(), blood_type: $("input[name=blood_type]").val()},
       success: function(data){
         $("#content").text(data);
       }
