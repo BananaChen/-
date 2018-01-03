@@ -1,4 +1,7 @@
 <?php
+
+echo "okok"
+
 $id = $_POST["id"];
 $blood_type = $_POST["blood_type"];
 if($blood_type){
@@ -7,6 +10,13 @@ if($blood_type){
 }
 else{
   echo "please type your data\<br>";
+}
+
+
+echo $blood_type;
+if($blood_type == 'A')
+{
+    echo "organized, rational";
 }
 
 switch ($blood_type) {
